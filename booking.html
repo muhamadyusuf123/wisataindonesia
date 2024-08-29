@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan - Amazing Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinasi</a>
+            <a href="booking.html" class="active">Pemesanan</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+        <h1>Pemesanan Wisata</h1>
+    </header>
+    <main class="main">
+        <h2>Formulir Pemesanan</h2>
+        <form action="submit_booking.html" method="POST">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="destination">Destinasi:</label>
+            <select id="destination" name="destination" required>
+                <option value="raja_ampat">Raja Ampat</option>
+                <option value="rinjani">Gunung Rinjani</option>
+                <option value="komodo">Komodo</option>
+                <option value="bromo">Gunung Bromo</option>
+                <option value="labuan_bajo">Labuan Bajo</option>
+                <option value="kuta">Pantai Kuta</option>
+                <option value="wakatobi">Wakatobi</option>
+                <option value="tana_toraja">Tana Toraja</option>
+            </select><br><br>
+            <label for="date">Tanggal:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <input type="submit" value="Kirim Pemesanan">
+        </form>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Amazing Destinations | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
